@@ -1,0 +1,54 @@
+Codeland API (W.I.P)
+====================
+
+
+Backwards Compatibility
+-----------------------
+
+ * 'gfx.textSize(str)' -- Returns an Width and Height of Text.
+ * 'tpt.textwidth(str)' -- Returns an Width of Text.
+ * 'gfx.WIDTH' -- Same as CODELAND.width
+ * 'gfx.HEIGHT' -- Same as CODELAND.height
+ * 'tpt.mousex' -- Same as CODELAND.mouse_x
+ * 'tpt.mousey' -- Same as CODELAND.mouse_y
+ 
+
+3D Lights
+---------
+
+ * 'CODELAND.d3d_lights' -- Returns an table from 3D Lights
+ * 'CODELAND.add_3d_light(x,y,z,source)' -- adds 3D Light. Returns an index on success, or nil on failure.
+ * 'CODELAND.set_3d_light_source(index,source)' -- Sets Source of an 3D Light.
+ * 'CODELAND.set_3d_light_position(index,pos)' -- Sets Position of an 3D Light.
+ * 'CODELAND.remove_3d_light(index)' -- Removes an 3D Light by index.
+ * 'CODELAND.get_light_reflection(pos)' -- Returns reflection of the Light.
+
+
+Table
+-----
+
+ * 'table.copy(t)' -- Copies an Table.
+ * 'table.select(t,func)' -- Selects the Items of an Table.
+ * 'table.detect(t,func)' -- Detects an Item of an Table.
+
+
+Objects
+-------
+
+ CODELAND.register_object(
+  "obj", -- Name of an Object
+  def -- See [#Object Definition]
+ )
+
+ * 'CODELAND.objects' -- Returns an Table from Objects.
+ * 'CODELAND.registered_objects' -- Returns an Table from Registered Objects.
+ 
+### Object Definition
+
+ {
+  width = 32, height = 32,
+  default_props = {text = "Hello!"},
+  on_step = function(x,y,index,type,dtime)
+  on_draw = function(x,y,width,height,index)
+  on_click = function(x,y,mouse_x,mouse_y,button,evt,index)
+ }
