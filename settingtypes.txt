@@ -1,4 +1,4 @@
-# This file contains settings of minetest_game that can be changed in
+# This file contains settings of codeland that can be changed in
 # minetest.conf
 
 #    In creative mode players are able to dig all kind of blocks nearly
@@ -10,3 +10,26 @@ creative_mode (Creative mode) bool false
 #    Autorun Project
 autorun (Autorun) string nil
 
+#    Upsample Images
+upsample_images (Upsample Images) bool false
+
+#    Safe Mode
+#    Gives a Lagproof to your Codeland from Number of Sprites up to 22.
+safe_mode (Safe Mode) bool true
+
+#    Sprite Flickering
+#    Make Sprites Flick only when the number is up to 22.
+#    
+#    !Seizure Warning!
+sprite_flickering (Sprite Flickering) bool true
+
+#    Sprite Flickering Type
+sprite_flickering_type (Sprite Flickering Type) enum by_order by_order,random
+
+#    Sprite Limit
+sprite_limit (Sprite Limit) int 18 2 21
+
+#    Anticurse Mode
+#    kick: Kicks a Player who sweared.
+#    replace: Replaces any bad word with another one, else Kicks a Player who sweared.
+anticurse_mode (Anticurse Mode) enum kick kick,replace
