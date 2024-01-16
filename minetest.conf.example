@@ -9,3 +9,17 @@
 
 # Autorun Project
 #autorun = nil
+
+# Upsample Images
+#upsample_images = false
+
+# Safe Mode
+#safe_mode = true
+
+# Sprite Flickering
+#sprite_flickering = true
+
+# Anticurse Mode
+# kick: Kicks a Player who sweared.
+# replace: Replaces any bad word with another one, else Kicks a Player who sweared.
+anticurse_mode = kick
